@@ -4,20 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            min-height: 100vh;
+            margin: 0%;
+
+        }
+        .navbar{
+            background-color:lightyellow ;
+            padding:15px;
+            text-align: center;
+        }
+        .navbar a{
+            font-size: 2rem;
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size: 2rem;
+            margin-right: 2%;
+            color: red;
+        }
+        .navbar a:hover{
+            background-color:lightgreen;
+            color:black;
+        }
+        .form-parent{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top:5%;
+        }
+        .form-container{
+            background-color:#FA742B;
+            width: 25%;
+            padding: 2%;
+            text-align: center;
+            border-radius:10px;
+        }
+        .form-container input,.form-container select{
+            padding:15px;
+            width:83%;
+        }
+        .form-container select{
+            width: 91%;
+        }
+        .form-container button{
+            width: 25%;
+            padding:2%;
+            background-color:#f6d365;
+            border-radius:10px;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 
 <body>
-    <form action="https://www.google.com">
+    <nav class="navbar">
+        <a href="">HOME</a>
+        <a href="">REGISTER</a>
+        <a href="">LOGIN</a>
+        <a href="">CONTACT</a>
+    </nav>
+    <div class="form-parent">   
+    <form  class="form-container" action="https://www.google.com">
         <h2>Register</h2>
+
     <p>
-    <input  required   placehold="enter your name" name="username" required/>
+    <input name="firstame"  required  type="name" placeholder="Enter your name" />
     </p>
     <p>
-        <input required type="email" placeholder="enter emailID"/>
+        <input name="email"  required type="email" placeholder="enter emailID"/>
     </p>
     <p>
-        <select>
-            <option value="">select your Branch</option>
+        <select name="Branch">
+            <option value="">Select your branch</option>
             <option value="">CSE</option>
             <option value="">IT</option>
             <option value="">ECE</option>
@@ -28,6 +89,7 @@
     </p>
     <button>register</button>
     </form>
-
+    <img  width="20%" src="gangster.png" alt="">
+    </div>
 </body>
 </html>
